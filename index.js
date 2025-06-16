@@ -20,7 +20,7 @@ app.get('/download', async (request, response) =>{
     response.status(200).send(process.env.LAMBDA_DOWN)
 })
 
-const PORT = 3001
+const PORT = 80
 app.listen(PORT, '0.0.0.0', () =>{ 
     console.log('Server running on port ' + PORT)
 })
